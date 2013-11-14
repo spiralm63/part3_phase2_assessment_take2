@@ -1,0 +1,31 @@
+<!-- this view is accessed from layout.erb if there is no current user
+current user is defined in sessions.rb
+ -->
+
+
+<div class="container">
+<h1>Event Management Application </h1>
+<h2>Sign Up For A New Account</h2>
+<p> Please enter your new account information below </p>
+
+  <form action="/sessions/newuser" method="post">
+
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" /><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" /><br>
+
+    <label for="email">Email:</label>
+    <input type="text" name="email" /><br>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="text" name="birthdate" /><br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password"><br>
+
+    <input type="submit" value="Sign Up">
+  </form>
+
+</div>

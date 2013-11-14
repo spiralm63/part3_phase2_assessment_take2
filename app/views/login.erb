@@ -1,0 +1,16 @@
+<!-- a "post" Login form, routes to /session in index.rb-->
+
+<div class="container">
+<h1>Event Management Application </h1>
+<h2>Please Login</h2>
+
+  <form action="/sessions/new" method="post">
+
+    <label for="email">Email:</label>
+    <input type="text" name="email" /><br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password"><br>
+
+    <input type="submit" value="Login">
+</form>

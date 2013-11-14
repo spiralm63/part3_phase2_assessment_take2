@@ -1,0 +1,15 @@
+body {
+  background-color: LightGray;
+}
+
+
+.container {
+    margin: 20px auto;
+    width: 600px;
+    padding: 20px 20px 20px 20px;
+    border: 1px dotted black;
+    background-color: white;
+  }
+  th {
+    text-align: left;
+  }

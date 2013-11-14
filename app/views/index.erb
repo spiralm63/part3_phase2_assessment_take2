@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Welcome</h1>
+  <h2>Jane's Event Management Application </h2>
+  <p>Phase 2 Assessment, Part 1</p>
+
+  <% if current_user %>
+    <a href="/logout"> Logout </a>
+  <% else %>
+    <h3><a href="/login">Login</a></h3>
+    <h3> Or, <a href="/signup">Sign Up</a></h3>
+
+<% end %>
+
+
+</div>

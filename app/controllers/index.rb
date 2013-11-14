@@ -16,7 +16,7 @@ post '/sessions/new' do
   user = User.find_by_email(params[:email])
   if user.authenticate(params[:password])
     session[:user_id] = user.id
-    redirect '/'
+    redirect '/profile'
   else
     erb :login
   end
@@ -44,3 +44,4 @@ end
 get '/profile' do
   erb :profile
 end
+

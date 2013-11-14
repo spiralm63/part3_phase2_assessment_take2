@@ -1,0 +1,28 @@
+
+<div class="container">
+
+  <h1>Welcome, <%= current_user.first_name %></h1>
+  <a href="/logout">Logout</a>
+</div>
+
+<div class="container">
+<h2>Attended Events</h2>
+<ul>
+  <% current_user.attended_events.each do |event| %>
+  <li><%= event.name %></li>
+  <% end %>
+</ul>
+</div>
+
+<div class="container">
+<h2>Created Events</h2>
+<ul>
+  <% current_user.created_events.each do |event| %>
+  <li><a href="/events/<%= event.id %>"><%= event.name %></a></li>
+  <% end %>
+</ul>
+<a href="/events/new">Create an Event</a>
+</div>
+
+
+

@@ -1,0 +1,22 @@
+<div class="container">
+
+<form action="/events/<%= @event.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="event[name]">Event Name:</label>
+  <input name="event[name]" type="text" value="<%= @event.name %>"><br>
+
+  <label for="event[location]">Location:</label>
+  <textarea name="event[location]"><%= @event.location %></textarea><br>
+
+  <label for="event[starts_at]">Starts At:</label>
+  <textarea name="event[starts_at]"><%= @event.starts_at %></textarea><br>
+
+
+  <label for="event[ends_at]">Ends At:</label>
+  <textarea name="event[ends_at]"><%= @event.ends_at %></textarea><br>
+
+  <input type="submit" value="Edit Event!">
+</form>
+
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+  <h1><%= @event.name %></h1>
+  <p>To be held at: <%= @event.location %></p>
+
+  <a href="/events/<%= @event.id %>/edit">Edit Event</a>
+  <form action="/events/<%= @event.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete course">
+  </form>
+</div>

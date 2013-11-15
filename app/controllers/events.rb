@@ -15,7 +15,7 @@ get '/events/:id' do
   erb :events_show
 end
 
-get '/event/:id/edit' do
+get '/events/:id/edit' do
   @event = Event.find(params[:id])
 
   erb :events_edit
@@ -30,7 +30,7 @@ end
 
 delete '/events/:id' do
   @event = Event.find(params[:id])
-  @course.destroy
+  @event.destroy
 
   redirect '/profile'
 end

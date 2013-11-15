@@ -24,7 +24,7 @@ end
 
 # starts a new session, routed FROM signup.erb view
 post '/sessions/newuser' do
-  user = User.create(:first_name => params[:first_name], :last_name => params[:last_name], :email => params[:email], :password => params[:password])
+  user = User.create(:first_name => params[:first_name], :last_name => params[:last_name], :email => params[:email], :birthdate => params[:birthdate], :password => params[:password])
   if user.save
     session[:user_id] = user.id
     redirect '/profile'

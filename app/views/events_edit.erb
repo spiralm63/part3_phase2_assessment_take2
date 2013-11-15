@@ -14,7 +14,7 @@
 
 
   <label for="event[ends_at]">Ends At:</label>
-  <textarea name="event[ends_at]"><%= @event.ends_at %></textarea><br>
+  <input type="datetime-local" name="event[ends_at]"><%= @event.ends_at %></textarea><br>
 
   <input type="submit" value="Edit Event!">
 </form>
